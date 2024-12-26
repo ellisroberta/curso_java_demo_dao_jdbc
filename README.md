@@ -7,7 +7,24 @@ facilitando a manipulação de dados.
 ## Estrutura do Projeto
 
 ```
-src/ ├── application/ │ ├── Program.java # Classe principal da aplicação │ └── Program2.java # Classe alternativa para gerenciamento de departamentos └── model/ ├── dao/ │ ├── DaoFactory.java # Fábrica para criação de instâncias de DAO │ ├── DepartmentDao.java # Interface para operações de departamento │ └── SellerDao.java # Interface para operações de vendedor ├── dao/impl/ │ ├── DepartmentDaoJDBC.java # Implementação da interface DepartmentDao │ └── SellerDaoJDBC.java # Implementação da interface SellerDao └── entities/ ├── Department.java # Classe que representa o departamento └── Seller.java # Classe que representa o vendedor database.sql # Script para criar o banco de dados e as tabelas                     # Script para criar o banco de dados e a tabela de departamentos
+src/
+├── application/
+│   ├── Program.java          # Classe principal da aplicação
+│   └── Program2.java         # Classe alternativa para gerenciamento de departamentos
+├── model/
+│   └── dao/
+│       └── DaoFactory.java   # Fábrica para criação de instâncias de DAO
+├── dao/
+│   └── impl/
+│       ├── DepartmentDao.java    # Interface para operações de departamento
+│       └── SellerDao.java        # Interface para operações de vendedor
+│       ├── DepartmentDaoJDBC.java # Implementação da interface DepartmentDao
+│       └── SellerDaoJDBC.java     # Implementação da interface SellerDao
+└── entities/
+    ├── Department.java       # Classe que representa o departamento
+    └── Seller.java           # Classe que representa o vendedor
+database.sql                  # Script para criar o banco de dados e suas tabelas
+db.properties                 # Arquivo de propriedades para configuração do banco de dados
 ```
 
 ### Entidades
